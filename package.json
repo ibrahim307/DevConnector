@@ -1,0 +1,35 @@
+{
+  "name": "devconnector",
+  "version": "1.0.0",
+  "description": "social network for developers",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \" npm run server\" \"npm run client \" "
+  },
+  "author": "ibrahim",
+  "license": "MIT",
+  "dependencies": {
+    "admin-bro": "^2.1.2",
+    "admin-bro-expressjs": "^2.0.0",
+    "admin-bro-mongoose": "^0.4.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "concurrently": "^5.0.2",
+    "express": "^4.16.3",
+    "express-formidable": "^1.2.0",
+    "express-validator": "^6.4.0",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.2.0",
+    "mongoose": "^5.0.12",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "react-scripts": "^3.4.1",
+    "validator": "^12.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
